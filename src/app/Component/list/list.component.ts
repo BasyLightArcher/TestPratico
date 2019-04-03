@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Sweet } from 'src/app/classes/SweetsInterface';
+import { ListService } from 'src/app/service/list.service';
 
 @Component({
   selector: 'app-list',
@@ -7,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private listService:ListService) { }
 
   ngOnInit() {
   }
-
+  sweets:Sweet[] = this.listService.getList();
 }

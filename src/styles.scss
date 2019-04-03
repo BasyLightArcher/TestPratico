@@ -106,11 +106,30 @@ select.ng-dirty.ng-invalid {
     grid-column: 10;
     grid-row: 1;
 }
+
+
 /* You can add global styles to this file, and also import other style files */
-.login{
+
+.login {
     background-color: rgb(83, 139, 211);
     text-align: center;
     color: white;
     width: 30%;
     margin: 0px auto;
+}
+
+.class-list-item {
+    box-sizing: content-box;
+    width: 95%;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #018dc4;
+    border-radius: 10px;
+    font: normal 16px/normal "Times New Roman", Times, serif;
+    color: rgba(0, 0, 0, 1);
+    text-overflow: clip;
+    background: #dbf4ff;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    list-style-type: none;
 }
