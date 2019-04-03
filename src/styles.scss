@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+.class-container,
+.class-panel {
+    padding: 0.01em 16px
+}
+
+.class-menu {
+    padding: 0.01em 16px;
+    border: 0.5px;
+    width: 95%;
+    height: 200px;
+}
+
+input.ng-dirty.ng-invalid,
+select.ng-dirty.ng-invalid {
+    border: 1px solid red;
+}
+
+.wrapper-ten-columns {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(10, auto);
+}
+
+.one-of-ten {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.two-of-ten {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.three-of-ten {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.four-of-ten {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.five-of-ten {
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.six-of-ten {
+    grid-column: 6;
+    grid-row: 1;
+}
+
+.seven-of-ten {
+    grid-column: 7;
+    grid-row: 1;
+}
+
+.eight-of-ten {
+    grid-column: 8;
+    grid-row: 1;
+}
+
+.nine-of-ten {
+    grid-column: 9;
+    grid-row: 1;
+}
+
+.ten-of-ten {
+    grid-column: 10;
+    grid-row: 1;
+}
