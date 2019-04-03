@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.sass']
 })
 export class ProfileComponent implements OnInit {
-
-  constructor() { }
+private editshow: boolean;
+  constructor(private editshow: secondiv) { }
 
   ngOnInit() {
   }
-
+  edit(){}
 }
