@@ -1,8 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
 .login{
-    background-color: rgb(83, 139, 211);
-    text-align: center;
+    width: 70%;
+    height: 400px;
+    background-color: cornflowerblue;
     color: white;
-    width: 30%;
     margin: 0px auto;
+    padding: 5%;
+    text-align: center;
+}
+.form{
+    width: 100%;
+    background-color: chocolate;
+    padding: 10% 0%;
+}
+.lblPwd{
+    padding-top: 5%;
+}
+.remindMe{
+    padding-top: 5%;
+}
+.button{
+    padding-top: 5%;
 }
