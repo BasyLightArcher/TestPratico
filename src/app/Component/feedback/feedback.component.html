@@ -1,0 +1,36 @@
+<form (ngSubmit)="onSubmit()" #feedbackForm="ngForm" class="feedback-form">
+    <div class="form-group">
+        <label for="nomeId">Nome</label>
+        <input type="text" class="form-control" id="nomeId" required [(ngModel)]="nome" name="nome" #nameVar="ngModel">
+        <div [hidden]="nameVar.valid || nameVar.pristine" class="alert alert-danger">Campo obbligatorio</div>
+    </div>
+    <div class="form-group">
+        <label for="cognomeId">Cognome</label>
+        <input type="text" class="form-control" id="cognomeId" required [(ngModel)]="cognome" name="cognome" #surnameVar="ngModel">
+        <div [hidden]="surnameVar.valid || surnameVar.pristine" class="alert alert-danger">Campo obbligatorio</div>
+    </div>
+    <div class="form-group">
+        <label for="genere">Genere</label>
+        <select class="form-control" name="genere" id="genere" required [(ngModel)]="genere" #genereVar="ngModel">
+          <option>Maschio</option>
+          <option>Femmina</option>
+        </select>
+    </div>
+    <div [hidden]="genereVar.valid || genereVar.pristine" class="alert alert-danger">Genere Obbligatorio</div>
+    <div class="form-group">
+        <label for="emailId">e-mail</label>
+        <input type="text" class="form-control" id="emailId" required [(ngModel)]="email" name="email" #emailVar="ngModel">
+        <div [hidden]="emailVar.valid || emailVar.pristine" class="alert alert-danger">Campo obbligatorio</div>
+    </div>
+    <div class="form-group">
+        <label for="telefonoId">Telefono</label>
+        <input type="text" class="form-control" id="telefonoId" required [(ngModel)]="telefono" name="telefono" #telefonoVar="ngModel">
+        <div [hidden]="telefonoVar.valid || telefonoVar.pristine" class="alert alert-danger">Campo obbligatorio</div>
+    </div>
+    <div class="form-group">
+        <label for="commentoId">Commento</label>
+        <input type="text" class="form-control" id="commentoId" required [(ngModel)]="commento" name="commento" #commentoVar="ngModel">
+        <div [hidden]="commentoVar.valid || commentoVar.pristine" class="alert alert-danger">Campo obbligatorio</div>
+    </div>
+    <button type="submit" class="btn btn-success" [disabled]="!feedbackForm.form.valid">Submit</button>
+</form>
