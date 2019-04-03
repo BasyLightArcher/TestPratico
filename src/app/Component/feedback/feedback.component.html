@@ -1,4 +1,4 @@
-<form (ngSubmit)="onSubmit()" #feedbackForm="ngForm" class="feedback-form">
+<form (ngSubmit)="onSubmit()" #feedbackForm="ngForm" class="feedback-form" style="display: grid;">
     <div class="form-group">
         <label for="nomeId">Nome</label>
         <input type="text" class="form-control" id="nomeId" required [(ngModel)]="nome" name="nome" #nameVar="ngModel">
