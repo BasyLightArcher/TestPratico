@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './Component/menu/menu.component';
 import { ListComponent } from './Component/list/list.component';
-
+import {FormsModule} from '@angular/forms'
 import { HomepageComponent } from './Component/homepage/homepage.component';
 import { LoginComponent } from './Component/login/login.component';
+import { FeedbackComponent } from './Component/feedback/feedback.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +16,13 @@ import { LoginComponent } from './Component/login/login.component';
     HomepageComponent,
     MenuComponent,
     ListComponent,
-    LoginComponent
+    LoginComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
