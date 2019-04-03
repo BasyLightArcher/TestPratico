@@ -108,12 +108,39 @@ select.ng-dirty.ng-invalid {
 
 /* You can add global styles to this file, and also import other style files */
 
-.login {
+.register {
     background-color: rgb(83, 139, 211);
     text-align: center;
     color: white;
-    width: 30%;
     margin: 0px auto;
+    padding: 5%;
+    text-align: center;
+}
+.form{
+    width: 100%;
+    background-color: chocolate;
+    padding: 5% 0%;
+}
+h1{
+    background-color: chocolate;
+}
+.lblPwd{
+    padding-top: 3%;
+}
+.remindMe{
+    padding-top: 3%;
+}
+.button{
+    padding-top: 3%;
+}
+.addBtn{
+    padding-top: 2%;
+}
+.cognome{
+    padding-top: 3%;
+}
+.radioBtn{
+    padding-top: 3%;
 }
 
 .class-list-item {
