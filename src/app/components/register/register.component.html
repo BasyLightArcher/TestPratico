@@ -1,48 +1,48 @@
 <div class="register">
     <h1>Registrati</h1>
-    <form class="form">
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()" class="form">
       <div>
         <label>Nome</label>
       </div>
       <div>
-        <input type="text" placeholder="Inserisci il tuo nome">
+        <input type="text" formControlName="nome" placeholder="Inserisci il tuo nome" required>
       </div>
       <div class="cognome">
           <label>Cognome</label>
       </div>
       <div>
-        <input type="text" placeholder="Inserisci il tuo cognome">
+        <input type="text" formControlName="cognome" placeholder="Inserisci il tuo cognome" required>
       </div>
       <div class="radioBtn">
           <label>Sesso</label>
       </div>
       <div>
-        <input type="radio" name="sesso" value="uomo">Maschio
-        <input type="radio" name="sesso" value="donna">Femmina
+        <input formControlName="uomo" type="radio" name="sesso" value="uomo">Maschio
+        <input formControlName="donna" type="radio" name="sesso" value="donna">Femmina
       </div>
       <div>
           <label>Email</label>
       </div>
       <div>
-        <input type="email" placeholder="Inserisci la tua email">
+        <input type="email"  formControlName="email" placeholder="Inserisci la tua email" required>
       </div>
       <div>
           <label>Numero di Cellulare</label>
       </div>
       <div>
-          <input type="number" placeholder="Inserisci il tuo cellulare">
+          <input type="number" formControlName="cellulare" placeholder="Inserisci il tuo cellulare" required>
         </div>
       <div class="lblPwd">
         <label>Password</label>
       </div>
       <div>
-        <input type="password" placeholder="Inserisci la password"> 
+        <input type="password" formControlName="password" placeholder="Inserisci la password" required> 
       </div>
       <div>
-        <input type="checkbox">
+        <input type="checkbox" formControlName="checkboxPassword" required>
         <label>Visualizza</label>
       </div>
-      <div class="button">
+      <div type="submit" [disabled]="!profileForm.valid" class="button">
         <button type="submit">Registrati</button>
         <button type="reset">Reset</button>
       </div>
