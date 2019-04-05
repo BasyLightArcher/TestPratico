@@ -29,6 +29,17 @@
     height: 50px;
 }
 
+.class-list {
+    padding: 0.01em 0.01px;
+    margin-top: 5px;
+    margin-left: 25px;
+    padding-left: 10px;
+    border: 0.5px solid black;
+    width: 96.3%;
+    height: 200px;
+    align-items: left;
+}
+
 .logo-menu {
     height: 40px;
     border: none;
@@ -116,36 +127,44 @@ select.ng-dirty.ng-invalid {
     padding: 5%;
     text-align: center;
 }
-.form{
+
+.form {
     width: 100%;
     background-color: chocolate;
     padding: 5% 0%;
 }
-h1{
+
+h1 {
     background-color: chocolate;
 }
-.lblPwd{
+
+.lblPwd {
     padding-top: 3%;
 }
-.remindMe{
+
+.remindMe {
     padding-top: 3%;
 }
-.button{
+
+.button {
     padding-top: 3%;
 }
-.addBtn{
+
+.addBtn {
     padding-top: 2%;
 }
-.cognome{
+
+.cognome {
     padding-top: 3%;
 }
-.radioBtn{
+
+.radioBtn {
     padding-top: 3%;
 }
 
 .class-list-item {
     box-sizing: content-box;
-    width: 95%;
+    width: 92%;
     cursor: pointer;
     margin: 10px;
     padding: 10px 20px;
