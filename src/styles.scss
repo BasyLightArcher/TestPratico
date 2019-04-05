@@ -1,13 +1,16 @@
 @import './assets/scss/variables';
-html {
-    background: linear-gradient(to right, $darkBlue, $lightBlue);
-}
-
 .class-container,
 .class-panel {
     padding: 0.01em 16px;
     margin-left: 5px;
     margin-top: 0px;
+}
+
+.class-container-login {
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, $bgLeft, $bgRight);
 }
 
 .class-home {
@@ -124,12 +127,8 @@ select.ng-dirty.ng-invalid {
 
 .form {
     width: 100%;
-    background-color: chocolate;
+    background: linear-gradient(to right, $bgLeft, $bgRight);
     padding: 5% 0%;
-}
-
-h1 {
-    background-color: chocolate;
 }
 
 .lblPwd {
@@ -170,4 +169,9 @@ h1 {
     background: #dbf4ff;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
     list-style-type: none;
+}
+
+html,
+body {
+    background: linear-gradient(to right, $darkBlue, $lightBlue);
 }

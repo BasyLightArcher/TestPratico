@@ -1,3 +1,14 @@
-.login{
-    background-color: red($color: #000000);
+@import './src/assets/scss/variables';
+.login-new {
+    text-align: center;
+    background: linear-gradient(to right, $bgLeft, $bgRight);
+    border: 2px solid;
+    width: 300px;
+    height: 450px;
+    display: inline-block;
+}
+
+.wrapper {
+    padding-top: 100px;
+    text-align: center;
 }
