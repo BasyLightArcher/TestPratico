@@ -1,25 +1,47 @@
 <div class="class-container">
-    <div class="class-menu" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 5fr;">
-        <button class="menu-button">
-          Home
-        </button>
-        <button class="menu-button">
+    <nav>
+        <div class="class-menu" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 5fr;">
+            <a routerLink='/portal/home' routerLinkActive="active">
+                <button class="menu-button">
+              Home
+            </button>
+            </a>
+            <a routerLink='/portal/list' routerLinkActive="active">
+                <button class="menu-button">
             Lista
         </button>
-        <button class="menu-button">
+            </a>
+            <a routerLink='/portal/cards' routerLinkActive="active">
+                <button class="menu-button">
               Cards
         </button>
-        <button class="menu-button">
+            </a>
+            <a routerLink='/portal/feedback' routerLinkActive="active">
+                <button class="menu-button">
             Feedback
           </button>
-        <button class="menu-button">
+            </a>
+            <a routerLink='/portal/profile' routerLinkActive="active">
+                <button class="menu-button">
               Profilo
           </button>
-        <button class="menu-button">
+            </a>
+            <button class="menu-button" (click)="longout()">
                 Esci
           </button>
-        <div style="display: flex; justify-content: flex-end; align-items: center">
-            <img alt="Avatar" class="logo-menu" src="assets/img/img_avatar2.png">
+            <div style="display: flex; justify-content: flex-end; align-items: center">
+                <img alt="Avatar" class="logo-menu" src="assets/img/img_avatar2.png">
+            </div>
         </div>
-    </div>
+    </nav>
 </div>
+<router-outlet></router-outlet>
+<!-- 
+<nav>
+    <a routerLink='portalGame/home' routerLinkActive="active" class="w3-bar-item w3-button ">Home</a>
+    <a class="w3-bar-item w3-button w3-text-white w3-hover-text-black">Top 10 del momento</a>
+    <a class="w3-bar-item w3-button w3-text-white w3-hover-text-black">Nuove uscite</a>
+    <a class="w3-bar-item w3-button w3-text-white w3-hover-text-black">Chi siamo</a>
+    <a routerLink='portalGame/game-list' routerLinkActive="active" class="w3-bar-item w3-button w3-text-white w3-hover-text-black">game-list</a>
+    <a class="w3-bar-item w3-button w3-text-white w3-hover-text-black" (click)="logout()">{{user_id}} Logout</a>
+</nav> -->
