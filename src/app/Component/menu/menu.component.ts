@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { RoutingEnum } from 'src/app/classes/RoutingEnum';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  logout(){
+    alert("Ciao, stai tornando al LOGIN")
+    this.router.navigate(['/' + RoutingEnum.login]);
   }
 
 }
