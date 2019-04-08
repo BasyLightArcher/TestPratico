@@ -15,7 +15,7 @@ export class MenuComponent implements OnInit {
   }
 
   logout(){
-    alert("Ciao, stai avviando la funzione logout, e torni al LOGIN")
+    alert("Ciao, stai tornando al LOGIN")
     this.router.navigate(['/' + RoutingEnum.login]);
   }
 

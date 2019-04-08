@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
   onSubmit(){
     this.submitted = true;
     if(this.loginForm.invalid){
-      alert('Ciao, non hai fatto il login');
+      alert('Ciao, NON hai fatto il login');
       return;
     }
     else{
