@@ -1,5 +1,9 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="wrapper">
     <div class="login-new">
+        <div class="addBtn" [routerLink]="['/register']" routerLinkActive="router-link-active">
+            <h1 class="fa fa-plus"></h1>
+        </div>
         <h1>Accedi</h1>
         <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <div>
@@ -23,11 +27,8 @@
                 <input type="checkbox">
             </div>
             <div class="button">
-                <button type="submit">Login</button>
-                <button type="reset" (click)="reset()">Reset</button>
-            </div>
-            <div class="addBtn">
-                <label>Per registrarti, clicca <a [routerLink]="['/register']" routerLinkActive="router-link-active" >qui</a></label>
+                <button type="submit" class="button-submit">Login</button>
+                <button type="reset" (click)="reset()" class="button-reset">Reset</button>
             </div>
         </form>
     </div>

@@ -4,11 +4,17 @@
     background: linear-gradient(to right, $bgLeft, $bgRight);
     border: 2px solid;
     width: 300px;
-    height: 450px;
+    height: 550px;
     display: inline-block;
 }
 
 .wrapper {
     padding-top: 100px;
     text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
 }
