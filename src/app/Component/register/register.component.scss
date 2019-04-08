@@ -1,0 +1,14 @@
+@import './src/assets/scss/variables';
+.register-new {
+    text-align: center;
+    background: linear-gradient(to right, $bgLeft, $bgRight);
+    border: 2px solid;
+    width: 300px;
+    height: 450px;
+    display: inline-block;
+}
+
+.wrapper {
+    padding-top: 100px;
+    text-align: center;
+}
