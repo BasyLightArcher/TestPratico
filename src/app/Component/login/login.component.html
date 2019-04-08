@@ -1,18 +1,18 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<div class="login">
+<div class="login formLogin">
   <h1>Accedi</h1>
-  <form class="form">
+  <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <div>
-      <label>Username</label>
+      <label for="username">Username</label>
     </div>
     <div>
-      <input type="text">
+      <input type="text" placeholder="Inserisci il nome utente" [formControlName]="'username'" required>
     </div>
     <div class="lblPwd">
-      <label>Password</label>
+      <label for="password" >Password</label>
     </div>
     <div>
-      <input type="password">
+      <input type="password" placeholder="Inserisci la password" formControlName="password" required>
     </div>
     <div>
       <input type="checkbox">
@@ -23,8 +23,8 @@
       <input type="checkbox">
     </div>
     <div class="button">
-      <button type="submit" (click)="login()">Login</button>
-      <button type="reset">Reset</button>
+      <button type="submit">Login</button>
+      <button type="reset" (click)="reset()">Reset</button>
     </div>
     <div class="addBtn">
       <label>Per registrarti, clicca qui <a><i class="fas fa-plus"></i></a></label>

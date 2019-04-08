@@ -10,6 +10,7 @@ import {FormsModule} from '@angular/forms'
 import { HomepageComponent } from './Component/homepage/homepage.component';
 import { LoginComponent } from './Component/login/login.component';
 import { FeedbackComponent } from './Component/feedback/feedback.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FeedbackComponent } from './Component/feedback/feedback.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
