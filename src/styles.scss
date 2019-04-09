@@ -166,3 +166,13 @@ html,
 body {
     background: linear-gradient(to right, $darkBlue, $lightBlue);
 }
+
+
+.formLogin{
+    text-align: center;
+    background: linear-gradient(to right, #00357F, #00617F);
+    border: 2px solid;
+    width: 300px;
+    height: 450px;
+    display: inline-block;
+}

@@ -36,19 +36,23 @@ export class LoginComponent implements OnInit {
 
   onSubmit(){
     this.submitted = true;
-    if(this.loginForm.invalid){
-      alert('Ciao, NON hai fatto il login');
+    if(this.loginForm.status === 'INVALID'){
+      alert('Username e/o Password Errate ! ! !');
       return;
     }
     else{
-      alert('ciao, hai fatto il login');
       this.login();
       this.router.navigate(['/' + RoutingEnum.home]);
+      alert('Login effettuato con successo ! ! ! ');
     }
   }
 
   reset(): void{
     this.loginForm.reset();
+  }
+
+  register() {
+    this.router.navigate(['/' + RoutingEnum.register]);
   }
 
 }
