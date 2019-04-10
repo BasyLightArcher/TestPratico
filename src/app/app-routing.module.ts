@@ -5,7 +5,7 @@ import { LoginComponent } from './Component/login/login.component';
 
 const routes: Routes = [
   {path: RoutingEnum.login, component: LoginComponent},
-  {path: '', redirectTo: '/login', pathMatch: 'full'}
+  {path: '', redirectTo: RoutingEnum.login, pathMatch: 'full'}
 ];
 
 @NgModule({
