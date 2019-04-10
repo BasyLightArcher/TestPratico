@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LogInComponent } from '../login.component';
+// import { LogInComponent } from '../login.component';
 
 @Component({
   selector: 'app-menu',
@@ -9,12 +9,7 @@ import { LogInComponent } from '../login.component';
 export class MenuComponent implements OnInit {
   private username: String;
   user_id: String;
-  constructor(private loginService: LogInService) {
-    this.getusername();
-    this.loginService.account$.subscribe(value => {
-      this.getusername();
-
-    })
+  constructor() {
   }
 
   getusername() {
@@ -24,6 +19,5 @@ export class MenuComponent implements OnInit {
   }
 
   logout() {
-    this.loginService.logOutDone();
   }
 }
