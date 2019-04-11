@@ -20,7 +20,6 @@ const routes: Routes = [
     path: 'portal',
     canActivate:[AuthGuard],
     canActivateChild:[AuthGuard],
-
     children: [
       { path: 'home', component: HomepageComponent },
 
