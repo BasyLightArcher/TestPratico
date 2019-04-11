@@ -1,2 +1,3 @@
-<app-menu></app-menu>
+<app-menu *ngIf="loginActive; else notLoginBox"></app-menu>
+<!-- <app-menu #seconds *ngIf="registerActive; else notLoginBox"></app-menu> -->
 <router-outlet></router-outlet>
