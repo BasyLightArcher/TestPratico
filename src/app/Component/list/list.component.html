@@ -1,6 +1,19 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <ul>
-    <li class="class-list-item" *ngFor="let item of sweets">{{item.name}}
-        <div class="align-right"><button class="fa fa-heart-o"></button><button class="fa fa-share-alt"></button><button class="fa fa-ellipsis-v"></button></div>
+    <li class="class-list-item" *ngFor="let item of sweets" [hidden]="item.hidden">{{item.name}}
+        <div class="align-right">
+            <button [ngClass]="item.favorite ? 'fa fa-heart' : 'fa fa-heart-o'" (click)="addFavorite(item)"></button>
+            <button class="fa fa-share-alt"></button>
+            <button class="fa fa-ellipsis-v" (click)="hideMenu(item)">
+                <div [hidden]="!item.showMenu">
+                <button>
+                    mostra di più
+                </button>
+            <button (click)="hideItem(item)">
+                    nascondi
+                </button>
+        </div>
+        </button>
+        </div>
     </li>
 </ul>
