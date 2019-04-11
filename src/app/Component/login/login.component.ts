@@ -17,23 +17,38 @@ export class LoginComponent implements OnInit {
     password: new FormControl()
   })
   submitted = false;
+  admin: String;
+  password: String;
+  
 
   constructor(private router: Router, private formBuilder: FormBuilder, private loginService: LoginService) {
     this.loginForm = this.formBuilder.group({
       username: ['', Validators.required],
       password: ['', Validators.compose([Validators.required, Validators.minLength(4)])]
     })
+    this.admin="admin";
+    this.password="admin";
    }
 
   ngOnInit() {
   }
 
-  public login() {
-    if(this.loginForm.get('username').value >= 4 && this.loginForm.get('password').value >= 4) {
+   checkid() {
+    if((this.loginForm.get('username').value == localStorage.getItem('user') &&
+       this.loginForm.get('password').value == localStorage.getItem('psw'))||
+       (this.loginForm.get('username').value== this.admin && 
+       this.loginForm.get('password').value== this.password)){
       sessionStorage.setItem('username', this.loginForm.get('username').value);
       sessionStorage.setItem('password', this.loginForm.get('password').value);
+      return this.doLogin();
     }
-    return this.loginService.getLogIn();
+    else { return false; }
+  }
+  getusername() {
+    return localStorage.getItem('user');
+  }
+  doLogin() {
+    this.loginService.logInDone();
   }
 
   onSubmit(){
@@ -44,8 +59,7 @@ export class LoginComponent implements OnInit {
     }
     else{
       alert('ciao, hai fatto il login');
-      this.login();
-      this.router.navigate(['/' + RoutingEnum.home]);
+      this.checkid();
     }
   }
 

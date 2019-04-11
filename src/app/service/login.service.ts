@@ -12,6 +12,15 @@ export class LoginService {
   
   constructor(private router: Router) { }
 
+  logInDone() {
+    this.account.next(true);
+    this.router.navigateByUrl('/portal/home');
+  }
+  logOutDone() {
+    this.account.next(false);
+    this.router.navigateByUrl('/login');
+    localStorage.clear();
+  }
   public getLogIn()
   {
     return this.account.getValue();
