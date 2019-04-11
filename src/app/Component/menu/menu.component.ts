@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { RoutingEnum } from 'src/app/classes/RoutingEnum';
+import { LoginService } from 'src/app/service/login.service';
+
 
 @Component({
   selector: 'app-menu',
@@ -11,14 +12,14 @@ export class MenuComponent implements OnInit {
   private username: String;
   user_id: String;
 
-  constructor(private router: Router) { }
+  constructor(private loginService: LoginService) { }
 
   ngOnInit() {
   }
 
-  logout(){
-    alert("Ciao, stai tornando al LOGIN")
-    this.router.navigate(['/' + RoutingEnum.login]);
+  logout() {
+    this.loginService.logOutDone();
   }
+
 
 }
