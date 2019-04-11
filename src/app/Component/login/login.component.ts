@@ -38,8 +38,8 @@ export class LoginComponent implements OnInit {
        this.loginForm.get('password').value == localStorage.getItem('psw'))||
        (this.loginForm.get('username').value== this.admin && 
        this.loginForm.get('password').value== this.password)){
-      sessionStorage.setItem('username', this.loginForm.get('username').value);
-      sessionStorage.setItem('password', this.loginForm.get('password').value);
+        localStorage.setItem('username', this.loginForm.get('username').value);
+        localStorage.setItem('password', this.loginForm.get('password').value);
       return this.doLogin();
     }
     else { return false; }
