@@ -6,7 +6,7 @@ import { LoginService } from 'src/app/service/login.service';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.sass']
+  styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
   private username: String;
