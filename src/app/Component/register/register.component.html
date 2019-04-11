@@ -5,18 +5,18 @@
         <div class="addBtn" [routerLink]="['/login']" routerLinkActive="router-link-active">
             <h1 class="fa fa-close"></h1>
         </div>
-        <form class="form">
+        <form class="form" [formGroup]="registerForm">
             <div>
                 <label>Nome</label>
             </div>
             <div>
-                <input type="text" placeholder="Inserisci il tuo nome">
+                <input type="text" placeholder="Inserisci il tuo nome" [formControlName]="'nome'">
             </div>
             <div class="cognome">
                 <label>Cognome</label>
             </div>
             <div>
-                <input type="text" placeholder="Inserisci il tuo cognome">
+                <input type="text" placeholder="Inserisci il tuo cognome" [formControlName]="'cognome'">
             </div>
             <div class="radioBtn">
                 <label>Sesso</label>
@@ -29,26 +29,26 @@
                 <label>Email</label>
             </div>
             <div>
-                <input type="email" placeholder="Inserisci la tua email">
+                <input type="email" placeholder="Inserisci la tua email" [formControlName]="'email'">
             </div>
             <div>
                 <label>Numero di Cellulare</label>
             </div>
             <div>
-                <input type="text" placeholder="Inserisci il tuo cellulare">
+                <input type="text" placeholder="Inserisci il tuo cellulare" [formControlName]="'numero'">
             </div>
             <div class="lblPwd">
                 <label>Password</label>
             </div>
             <div>
-                <input type="password" placeholder="Inserisci la password">
+                <input type="password" placeholder="Inserisci la password" [formControlName]="'password'">
             </div>
             <div>
                 <input type="checkbox">
                 <label>Visualizza</label>
             </div>
             <div class="button">
-                <button type="submit" class="button-submit">Registrati</button>
+                <button type="submit" class="button-submit" (click)="doRegister()">Registrati</button>
                 <button type="reset" class="button-reset">Reset</button>
             </div>
         </form>
