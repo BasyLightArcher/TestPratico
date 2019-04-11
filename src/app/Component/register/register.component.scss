@@ -1,10 +1,10 @@
 @import './src/assets/scss/variables';
-.login-new {
+.register-new {
     text-align: center;
     background: linear-gradient(to right, $bgLeft, $bgRight);
     border: 2px solid;
     width: 300px;
-    height: 550px;
+    height: 710px;
     display: inline-block;
 }
 
@@ -14,7 +14,7 @@
 }
 
 h1 {
-    color: white;
-    font-size: 50px;
     text-decoration: none;
+    font-size: 50px;
+    color: white;
 }

@@ -1,0 +1,17 @@
+button {
+    position: relative;
+    margin-right: 20px;
+}
+
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+}
+
+button {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}

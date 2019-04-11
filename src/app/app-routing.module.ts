@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { RoutingEnum } from './classes/RoutingEnum';
 import { LoginComponent } from './Component/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
+import { RegisterComponent } from './component/register/register.component';
 import { ListComponent } from './Component/list/list.component';
-import { HomepageComponent } from './components/homepage/homepage.component';
+import { HomepageComponent } from './component/homepage/homepage.component';
 import { FeedbackComponent } from './Component/feedback/feedback.component';
 
 const routes: Routes = [

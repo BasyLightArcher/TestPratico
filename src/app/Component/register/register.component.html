@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="wrapper">
+    <div class="register-new">
+        <h1>Registrati</h1>
+        <div class="addBtn" [routerLink]="['/login']" routerLinkActive="router-link-active">
+            <h1 class="fa fa-close"></h1>
+        </div>
+        <form class="form">
+            <div>
+                <label>Nome</label>
+            </div>
+            <div>
+                <input type="text" placeholder="Inserisci il tuo nome">
+            </div>
+            <div class="cognome">
+                <label>Cognome</label>
+            </div>
+            <div>
+                <input type="text" placeholder="Inserisci il tuo cognome">
+            </div>
+            <div class="radioBtn">
+                <label>Sesso</label>
+            </div>
+            <div>
+                <input type="radio" name="sesso" value="uomo"><label>Maschio</label>
+                <input type="radio" name="sesso" value="donna"><label>Femmina</label>
+            </div>
+            <div>
+                <label>Email</label>
+            </div>
+            <div>
+                <input type="email" placeholder="Inserisci la tua email">
+            </div>
+            <div>
+                <label>Numero di Cellulare</label>
+            </div>
+            <div>
+                <input type="text" placeholder="Inserisci il tuo cellulare">
+            </div>
+            <div class="lblPwd">
+                <label>Password</label>
+            </div>
+            <div>
+                <input type="password" placeholder="Inserisci la password">
+            </div>
+            <div>
+                <input type="checkbox">
+                <label>Visualizza</label>
+            </div>
+            <div class="button">
+                <button type="submit" class="button-submit">Registrati</button>
+                <button type="reset" class="button-reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</div>

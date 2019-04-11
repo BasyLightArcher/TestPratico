@@ -1,32 +1,34 @@
-<div class="login">
-    <h1>Accedi</h1>
-    <form class="form">
-        <div>
-            <label>Username</label>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="wrapper">
+    <div class="login-new">
+        <div class="addBtn" [routerLink]="['/register']" routerLinkActive="router-link-active">
+            <h1 class="fa fa-plus"></h1>
         </div>
-        <div>
-            <input type="text">
-        </div>
-        <div class="lblPwd">
-            <label>Password</label>
-        </div>
-        <div>
-            <input type="password">
-        </div>
-        <div>
-            <input type="checkbox">
-            <label>Visualizza</label>
-        </div>
-        <div class="remindMe">
-            <label>Ricordami</label>
-            <input type="checkbox">
-        </div>
-        <div class="button">
-            <button type="submit">Login</button>
-            <button type="reset">Reset</button>
-        </div>
-        <div class="addBtn">
-            <label>Per registrarti, clicca qui <a><i class="fas fa-plus"></i></a></label>
-        </div>
-    </form>
-</div>
+        <h1>Accedi</h1>
+        <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div>
+                <label for="username">Username</label>
+            </div>
+            <div>
+                <input type="text" placeholder="Inserisci il nome utente" [formControlName]="'username'" required>
+            </div>
+            <div class="lblPwd">
+                <label for="password">Password</label>
+            </div>
+            <div>
+                <input type="password" placeholder="Inserisci la password" formControlName="password" required>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label>Visualizza</label>
+            </div>
+            <div class="remindMe">
+                <label>Ricordami</label>
+                <input type="checkbox">
+            </div>
+            <div class="button">
+                <button type="submit" class="button-submit">Login</button>
+                <button type="reset" (click)="reset()" class="button-reset">Reset</button>
+            </div>
+        </form>
+    </div>

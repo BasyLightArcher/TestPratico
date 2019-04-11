@@ -21,5 +21,4 @@ export class ListService {
   getList():Sweet[] {
     return this.sweets;
   }
-
 }

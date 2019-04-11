@@ -1,189 +1,227 @@
-.class-container,
-.class-panel {
-    padding: 0.01em 16px;
-    margin-left: 5px;
-    margin-top: 0px;
-}
-
-.class-home {
-    text-align: center;
-    height: 400px;
-    width: 500px;
-    // border: 0.5px solid red;
-}
-
-.class-container-home,
-.class-panel {
-    padding: 0.01em 16px;
-    margin-left: 26px;
-    margin-right: 15px;
-    margin-top: 0px;
-    border: 0.5px solid black;
-    width: 94.5%;
-}
-
-.class-menu {
-    padding: 0.01em 0.01px;
-    margin-top: 5px;
-    margin-left: 5px;
-    border: 0.5px solid black;
-    // width: 97.3%;
-    height: 50px;
-}
-
-.class-list {
-    padding: 0.01em 0.01px;
-    margin-top: 5px;
-    margin-left: 25px;
-    padding-left: 10px;
-    border: 0.5px solid black;
-    width: 96.3%;
-    height: 200px;
-    align-items: left;
-}
-
-.logo-menu {
-    height: 40px;
-    border: none;
-    padding-right: 10px;
-}
-
-.img-avatar {
-    height: 80px;
-    width: 100px;
-    border: none;
-    padding-left: 550px;
-    padding-top: 5px;
-}
-
-.menu-button {
-    height: 50px;
-    width: 100px;
-    border: none;
-    color: #000000;
-    background: none;
-}
-
-input.ng-dirty.ng-invalid,
-select.ng-dirty.ng-invalid {
-    border: 1px solid red;
-}
-
-.wrapper-ten-columns {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(10, auto);
-}
-
-.one-of-ten {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.two-of-ten {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.three-of-ten {
-    grid-column: 3;
-    grid-row: 1;
-}
-
-.four-of-ten {
-    grid-column: 4;
-    grid-row: 1;
-}
-
-.five-of-ten {
-    grid-column: 5;
-    grid-row: 1;
-}
-
-.six-of-ten {
-    grid-column: 6;
-    grid-row: 1;
-}
-
-.seven-of-ten {
-    grid-column: 7;
-    grid-row: 1;
-}
-
-.eight-of-ten {
-    grid-column: 8;
-    grid-row: 1;
-}
-
-.nine-of-ten {
-    grid-column: 9;
-    grid-row: 1;
-}
-
-.ten-of-ten {
-    grid-column: 10;
-    grid-row: 1;
-}
-
-
-/* You can add global styles to this file, and also import other style files */
-
-.register {
-    background-color: rgb(83, 139, 211);
-    text-align: center;
-    color: white;
-    margin: 0px auto;
-    padding: 5%;
-    text-align: center;
-}
-
-.form {
-    width: 100%;
-    background-color: chocolate;
-    padding: 5% 0%;
-}
-
-h1 {
-    background-color: chocolate;
-}
-
-.lblPwd {
-    padding-top: 3%;
-}
-
-.remindMe {
-    padding-top: 3%;
-}
-
-.button {
-    padding-top: 3%;
-}
-
-.addBtn {
-    padding-top: 2%;
-}
-
-.cognome {
-    padding-top: 3%;
-}
-
-.radioBtn {
-    padding-top: 3%;
-}
-
-.class-list-item {
-    box-sizing: content-box;
-    width: 92%;
-    cursor: pointer;
-    margin: 10px;
-    padding: 10px 20px;
-    border: 1px solid #018dc4;
-    border-radius: 10px;
-    font: normal 16px/normal "Times New Roman", Times, serif;
-    color: rgba(0, 0, 0, 1);
-    text-overflow: clip;
-    background: #dbf4ff;
-    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
-    list-style-type: none;
-}
+    @import './assets/scss/variables';
+    .class-container,
+    .class-panel {
+        padding: 0.01em 16px;
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+    
+    .class-container-login {
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to right, $bgLeft, $bgRight);
+    }
+    
+    .class-home {
+        height: 400px;
+        width: 500px;
+        border: 0.5px solid red;
+    }
+    
+    .class-container-home,
+    .class-panel {
+        padding: 0.01em 16px;
+        margin-left: 26px;
+        margin-right: 15px;
+        margin-top: 0px;
+        border: 0.5px solid black;
+    }
+    
+    .class-menu {
+        padding: 0.01em 0.01px;
+        margin-top: 5px;
+        margin-left: 5px;
+        border: 0.5px solid black;
+        // width: 97.3%;
+        height: 50px;
+    }
+    
+    .logo-menu {
+        height: 40px;
+        border: none;
+        padding-right: 10px;
+    }
+    
+    .menu-button {
+        height: 50px;
+        width: 100px;
+        border: none;
+        color: #000000;
+        background: none;
+    }
+    
+    input.ng-dirty.ng-invalid,
+    select.ng-dirty.ng-invalid {
+        border: 1px solid red;
+    }
+    
+    .wrapper-ten-columns {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(10, auto);
+    }
+    
+    .one-of-ten {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .two-of-ten {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .three-of-ten {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    
+    .four-of-ten {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    
+    .five-of-ten {
+        grid-column: 5;
+        grid-row: 1;
+    }
+    
+    .six-of-ten {
+        grid-column: 6;
+        grid-row: 1;
+    }
+    
+    .seven-of-ten {
+        grid-column: 7;
+        grid-row: 1;
+    }
+    
+    .eight-of-ten {
+        grid-column: 8;
+        grid-row: 1;
+    }
+    
+    .nine-of-ten {
+        grid-column: 9;
+        grid-row: 1;
+    }
+    
+    .ten-of-ten {
+        grid-column: 10;
+        grid-row: 1;
+    }
+    /* You can add global styles to this file, and also import other style files */
+    
+    .form {
+        width: 100%;
+        background: linear-gradient(to right, $bgLeft, $bgRight);
+        padding: 5% 0%;
+    }
+    
+    .lblPwd {
+        padding-top: 3%;
+    }
+    
+    .remindMe {
+        padding-top: 3%;
+    }
+    
+    .button {
+        padding-top: 3%;
+    }
+    
+    .addBtn {
+        margin-right: 0px;
+        margin-left: auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        text-align: center;
+        background-color: black;
+        position: relative;
+        display: block;
+        padding: 0px;
+        padding-top: 1px;
+        cursor: pointer;
+    }
+    
+    .cognome {
+        padding-top: 3%;
+    }
+    
+    .radioBtn {
+        padding-top: 3%;
+    }
+    
+    .class-list-item {
+        box-sizing: content-box;
+        width: 95%;
+        cursor: pointer;
+        margin: 10px;
+        padding: 10px 20px;
+        border: 1px solid #018dc4;
+        border-radius: 10px;
+        font: normal 16px/normal "Times New Roman", Times, serif;
+        color: rgba(0, 0, 0, 1);
+        text-overflow: clip;
+        background: #dbf4ff;
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+        list-style-type: none;
+    }
+    
+    html,
+    body {
+        background: linear-gradient(to right, $darkBlue, $lightBlue);
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"] {
+        text-align: center;
+        width: 220px;
+        height: 32px;
+        border: none;
+        border-bottom: 1px solid #AAA;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        transition: 0.2s ease;
+        background: none;
+        color: white;
+    }
+    
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus,
+    input[type="radio"]:focus {
+        border-bottom: 2px solid #16a085;
+        color: bgLightBlue;
+        transition: 0.2s ease;
+    }
+    
+    .button-submit {
+        width: 280px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: white;
+        color: black;
+        text-transform: uppercase;
+    }
+    
+    .button-reset {
+        width: 150px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: white;
+        color: black;
+        text-transform: uppercase;
+    }
+    
+    label {
+        color: white;
+        text-transform: uppercase;
+    }
