@@ -13,6 +13,7 @@ import { HomepageComponent } from './component/homepage/homepage.component';
 import { MenuComponent } from './component/menu/menu.component';
 import { ProfileComponent } from './Component/profile/profile.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AuthGuard } from './RouteGuard';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
