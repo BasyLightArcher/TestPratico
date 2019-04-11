@@ -1,0 +1,10 @@
+.profile {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+    justify-content: center;
+}
+
+.profile-div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
