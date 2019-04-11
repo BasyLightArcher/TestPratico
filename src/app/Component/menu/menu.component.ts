@@ -12,14 +12,20 @@ export class MenuComponent implements OnInit {
   private username: String;
   user_id: String;
 
-  constructor(private loginService: LoginService) { }
+  constructor(private loginService: LoginService) {
+    this.getusername();
+    this.loginService.account$.subscribe(value => {
+      this.getusername();
+    })
+   }
 
+   getusername() {
+    this.user_id = sessionStorage.getItem('user');
+  }
   ngOnInit() {
   }
 
   logout() {
     this.loginService.logOutDone();
   }
-
-
 }

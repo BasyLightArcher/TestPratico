@@ -20,6 +20,7 @@ export class LoginService {
     this.account.next(false);
     this.router.navigateByUrl('/login');
     localStorage.clear();
+    sessionStorage.clear();
   }
   public getLogIn()
   {

@@ -40,6 +40,7 @@ export class LoginComponent implements OnInit {
        this.loginForm.get('password').value== this.password)){
         localStorage.setItem('user', this.loginForm.get('username').value);
         localStorage.setItem('psw', this.loginForm.get('password').value);
+        sessionStorage.setItem('user', this.loginForm.get('username').value);
       return this.doLogin();
     }
     else { return false; }
