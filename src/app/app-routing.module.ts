@@ -4,7 +4,7 @@ import { RoutingEnum } from './classes/RoutingEnum';
 import { LoginComponent } from './Component/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ListComponent } from './Component/list/list.component';
-import { HomepageComponent } from './Component/homepage/homepage.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
 import { FeedbackComponent } from './Component/feedback/feedback.component';
 
 const routes: Routes = [
