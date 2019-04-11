@@ -14,4 +14,14 @@ export class ListComponent implements OnInit {
   ngOnInit() {
   }
   sweets:Sweet[] = this.listService.getList();
+  btnStyle="fa fa-heart-o";
+  addFavorite(item:Sweet){
+    item.favorite=!item.favorite;
+  }
+  hideMenu(item:Sweet){
+    item.showMenu=!item.showMenu;
+  }
+  hideItem(item:Sweet){
+    item.hidden=!item.hidden;
+  }
 }
