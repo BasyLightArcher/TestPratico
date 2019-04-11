@@ -7,6 +7,7 @@ import { ListComponent } from './Component/list/list.component';
 import { HomepageComponent } from './component/homepage/homepage.component';
 import { FeedbackComponent } from './Component/feedback/feedback.component';
 import { ProfileComponent } from './Component/profile/profile.component';
+import { AuthGuard } from './RouteGuard';
 
 const routes: Routes = [
   // {path: RoutingEnum.login, component: LoginComponent},
@@ -16,7 +17,11 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent},
   {
-    path: 'portal', children: [
+    path: 'portal',
+    canActivate:[AuthGuard],
+    canActivateChild:[AuthGuard],
+
+    children: [
       { path: 'home', component: HomepageComponent },
 
       { path: 'list', component: ListComponent },
