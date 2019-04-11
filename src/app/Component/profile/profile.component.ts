@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 // private editshow: boolean;
+private name: String;
+private surname: String;
+private email: String;
+private age: number;
   constructor() { }
 
   ngOnInit() {
